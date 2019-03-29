@@ -1,13 +1,13 @@
 {
   "name": "react-persian-datepicker-ali",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Persian calendar and date picker components for React forked from react-persian-datepicker",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "NODE_ENV=development webpack-dev-server --hot --inline --content-base ./examples",
     "webpack": "NODE_ENV=production webpack",
-    "babel": "babel src --out-dir lib --ignore /examples && cp src/styles lib -rf",
+    "babel": "babel src --out-dir lib --ignore /examples && cp -rf ./src/styles ./lib",
     "prepublish": "npm run babel"
   },
   "repository": {
@@ -45,7 +45,7 @@
     "react-syntax-highlight": "0.0.2",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": ">3.1.11"
   },
   "peerDependencies": {
     "react": "^16.2.0",
